@@ -1,0 +1,26 @@
+{
+  "document_type": "invoice",
+  "vendor": {
+    "name": "ACME Office Supplies GmbH",
+    "address": "Industriestrasse 12, 1010 Wien, Austria",
+    "tax_id": "ATU12345678"
+  },
+  "invoice_number": "2026-0042",
+  "issue_date": "2026-05-14",
+  "due_date": "2026-06-13",
+  "currency": "EUR",
+  "line_items": [
+    { "description": "Printer paper A4 (500 sheets)", "quantity": 10, "unit_price": 4.5, "amount": 45.0 },
+    { "description": "Ballpoint pens (box of 50)", "quantity": 3, "unit_price": 8.9, "amount": 26.7 },
+    { "description": "Stapler heavy duty", "quantity": 2, "unit_price": 15.0, "amount": 30.0 },
+    { "description": "USB-C cable 2m", "quantity": 5, "unit_price": 9.2, "amount": 46.0 }
+  ],
+  "subtotal": 147.7,
+  "tax_breakdown": [
+    { "rate": 20, "base": 121.7, "amount": 24.34 },
+    { "rate": 10, "base": 26.0, "amount": 2.6 }
+  ],
+  "tax_total": 26.94,
+  "total": 174.64,
+  "notes": null
+}

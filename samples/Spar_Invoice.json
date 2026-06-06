@@ -1,0 +1,24 @@
+{
+  "document_type": "receipt",
+  "vendor": {
+    "name": "SPAR",
+    "address": "Kaigasse 28, 5020 Salzburg",
+    "tax_id": "ATU 61272358"
+  },
+  "invoice_number": null,
+  "issue_date": "2019-12-08",
+  "due_date": null,
+  "currency": "EUR",
+  "line_items": [
+    { "description": "ALMDUDLER 0,5L", "quantity": null, "unit_price": null, "amount": 1.19 },
+    { "description": "MOZARTKUGELN 6-ER", "quantity": null, "unit_price": null, "amount": 4.49 }
+  ],
+  "subtotal": 5.07,
+  "tax_breakdown": [
+    { "rate": 10, "base": 4.08, "amount": 0.41 },
+    { "rate": 20, "base": 0.99, "amount": 0.2 }
+  ],
+  "tax_total": 0.61,
+  "total": 5.68,
+  "notes": null
+}
