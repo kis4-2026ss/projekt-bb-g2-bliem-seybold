@@ -75,19 +75,20 @@ lib/scoring.ts  ──►  accuracy % + field diff
 
 ### Key folders
 
-| Path | What it is |
-|---|---|
-| `app/page.tsx` | The whole UI: upload, model picker, results, scoring. |
-| `app/components/` | UI pieces (UploadZone, FilePreview, ModelPicker, ResultCard, ScoreView, SampleLoader). |
-| `app/api/extract/` | Runs one extraction (one file × one model). |
-| `app/api/models/` | Lists models + whether each provider's key is configured. |
-| `app/api/samples/` | Serves the built-in sample invoices + ground truth. |
-| `lib/schema.ts` | The invoice **Zod schema** + the extraction prompt (single source of truth). |
-| `lib/providers/` | The model-abstraction layer (one adapter per provider) + the model registry. |
-| `lib/extract.ts` | Calls a provider, then parses + validates the JSON. |
-| `lib/scoring.ts` | Field-by-field comparison against ground truth. |
-| `samples/` | Test invoices: `<name>.<img>` + `<name>.json` (ground truth). |
-| `scripts/` | `gen_samples.py` (synthetic invoice generator) and a Gemini diagnostic. |
+| Path               | What it is                                                                             |
+|--------------------|----------------------------------------------------------------------------------------|
+| `app/page.tsx`     | The whole UI: upload, model picker, results, scoring.                                  |
+| `app/components/`  | UI pieces (UploadZone, FilePreview, ModelPicker, ResultCard, ScoreView, SampleLoader). |
+| `app/api/extract/` | Runs one extraction (one file × one model).                                            |
+| `app/api/models/`  | Lists models + whether each provider's key is configured.                              |
+| `app/api/samples/` | Serves the built-in sample invoices + ground truth.                                    |
+| `lib/schema.ts`    | The invoice **Zod schema** + the extraction prompt (single source of truth).           |
+| `lib/providers/`   | The model-abstraction layer (one adapter per provider) + the model registry.           |
+| `lib/extract.ts`   | Calls a provider, then parses + validates the JSON.                                    |
+| `lib/scoring.ts`   | Field-by-field comparison against ground truth.                                        |
+| `samples/`         | Test invoices: `<name>.<img>` + `<name>.json` (ground truth).                          |
+| `scripts/`         | `gen_samples.py` (synthetic invoice generator) and a Gemini diagnostic.                |
+| `doc/`             | PowerPoint                                                                             |
 
 ### The model-abstraction layer
 
